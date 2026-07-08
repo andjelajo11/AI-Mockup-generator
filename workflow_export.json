@@ -1,0 +1,997 @@
+{
+  "name": "AI Product Mockup Generator",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -560,
+        -64
+      ],
+      "id": "8da00741-8bcd-43f4-bd09-966e5ff8a72a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "=data",
+        "name": "Mockup 1",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1EZkXtFujvABZMaG6XYro1-ZTl2O2x3WH",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1360,
+        -272
+      ],
+      "id": "2365e1d9-0248-4cab-9609-620d35952e39",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "wXji5lyX3qkROX2D",
+          "name": "Google Drive OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "=data",
+        "name": "Mockup 3",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1EZkXtFujvABZMaG6XYro1-ZTl2O2x3WH",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1360,
+        160
+      ],
+      "id": "84bde30b-581e-495b-b33c-27195eb1d03e",
+      "name": "Upload file1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "wXji5lyX3qkROX2D",
+          "name": "Google Drive OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "=data",
+        "name": "Mockup 2",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1EZkXtFujvABZMaG6XYro1-ZTl2O2x3WH",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1360,
+        -48
+      ],
+      "id": "e1741a38-6421-41a8-8c5f-58c4f1ceccba",
+      "name": "Upload file2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "wXji5lyX3qkROX2D",
+          "name": "Google Drive OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n",
+        "height": 528,
+        "width": 544,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -144,
+        -192
+      ],
+      "typeVersion": 1,
+      "id": "59010d3e-6807-499c-a027-4d17a418ee7c",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n",
+        "height": 288,
+        "width": 384,
+        "color": "#B9FFAE"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -608,
+        -144
+      ],
+      "typeVersion": 1,
+      "id": "aabef172-2642-4c6e-a89d-368b4d73dfd9",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "# Upload & Product Selection\n**Double click**P to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 80,
+        "width": 352,
+        "color": "#FEFEE9"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -592,
+        -176
+      ],
+      "typeVersion": 1,
+      "id": "8884c2d8-7201-4600-b11a-a694c0dca236",
+      "name": "Prompts Genertaion1"
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n",
+        "height": 720,
+        "width": 544,
+        "color": "#FDA6F9"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        512,
+        -352
+      ],
+      "typeVersion": 1,
+      "id": "2a22dab5-f8fa-44f0-abcf-a58265466d6c",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Mockup Genereation Pipeline\n**Double click**P to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 80,
+        "width": 512,
+        "color": "#FEFEE9"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        528,
+        -384
+      ],
+      "typeVersion": 1,
+      "id": "1352640f-0afc-4ee7-9457-f465bc6baf54",
+      "name": "Prompts Genertaion2"
+    },
+    {
+      "parameters": {
+        "content": "\n\n\n\n\n\n## I'm a note \n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 896,
+        "width": 480,
+        "color": "#6CCDDB"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1136,
+        -528
+      ],
+      "typeVersion": 1,
+      "id": "aca2995e-98ec-43a5-bad8-6b458479c80a",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## Movckup Style Output\n\n**Double click**P to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)Mockup Style Output",
+        "height": 80,
+        "width": 448,
+        "color": "#FEFEE9"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1152,
+        -560
+      ],
+      "typeVersion": 1,
+      "id": "f0e46197-942a-436b-a3f9-8fb96697cfe7",
+      "name": "Prompts Genertaion3"
+    },
+    {
+      "parameters": {
+        "content": "# 🚀 AI Product Mockup Generator\n\nGenerate professional product mockups from a single product image.\n\n## Workflow\n\n1. Upload a product image.\n2. Select a visual style (Editorial, Cinematic, Fashion, or any custom style).\n3. AI creates 3 unique scene prompts while preserving the exact product identity.\n4. Flux Kontext generates 3 photorealistic mockups.\n5. Generated images are downloaded and automatically uploaded to Google Drive.\n\n✅ Easily extendable with additional visual styles.\n✅ Product identity is preserved across all generated images.",
+        "height": 416,
+        "width": 752
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -448,
+        -656
+      ],
+      "typeVersion": 1,
+      "id": "b38454e4-86f8-4402-8e0f-14f892afa45a",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "![Source example](https://res.cloudinary.com/dml3ezydg/image/upload/e_background_removal/v1782151624/bottle1_d4uqko.jpg#full-width)\n\n# Product",
+        "height": 432,
+        "color": "#000000"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -544,
+        176
+      ],
+      "typeVersion": 1,
+      "id": "a8603608-59ea-4824-a8f0-1eff874da192",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## Mockup Prompt Engine\n**Double click**P to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)",
+        "height": 80,
+        "width": 512,
+        "color": "#FEFEE9"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -128,
+        -208
+      ],
+      "typeVersion": 1,
+      "id": "c386ff7f-21f3-4bf8-941f-1327bffd00d1",
+      "name": "Prompts Genertaion"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "Generate editorial style brand imagery for this product. Create premium, aspirational imagery suitable for a high-end e-commerce campaign.",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "You are a professional brand photographer and visual art director specializing in e-commerce and DTC brand imagery. Given a product image and a visual style direction from the user, generate exactly 3 unique, highly detailed image generation prompts that reimagine the product in the specified style while maintaining the product's exact identity, shape, color, and branding.\n\nEach prompt should describe a different scene, lighting setup, and composition that fits the chosen style. Include specific details about background, props, lighting direction, color palette, and mood.\n\nStyle definitions:\n- CINEMATIC: Dramatic lighting, shallow depth of field, film grain, moody color grading, studio or environmental storytelling, anamorphic lens look\n- EDITORIAL: Clean, magazine-quality, minimalist compositions, neutral tones, sophisticated styling, white or muted backgrounds, crisp focus\n- FASHION: High-contrast, bold styling, dynamic angles, trend-forward aesthetics, vivid or monochromatic palettes, lifestyle context\n\nGLOBAL LOCKS:\n- Product must remain identical — do not alter shape, color, branding, or proportions\n- No text overlays or watermarks\n- Photorealistic quality, 8K detail\n\nPHYSICAL REALISM LOCKS:\n\nProduct must always be physically grounded (resting on a surface such as table, ground, hand, or pedestal)\nNo floating, levitation, or unsupported positioning\nProduct must not merge with props, backgrounds, or environment\nNo deformation, redesign, or reinterpretation of materials (glass stays glass, plastic stays plastic, etc.)\nNo added accessories attached to the product (no caps, labels, straps, reflections that change identity)\nProduct must remain the single clear focal object in the scene unless explicitly stated otherwise\nLighting may change, but must not alter physical structure or branding readability\n\nIDENTITY PRESERVATION HARD RULE:\n\nThe product is a real-world object being photographed, not re-created or redesigned\nThe model must treat it as an existing photographed item placed into a scene\nNo reinterpretation, no redesign, no stylization of the product itself\n\nCOMPOSITION RULE:\n\nThe product must be placed in a realistic photographic composition (rule of thirds, centered hero shot, or natural placement on surface). No mid-air or abstract positioning.\n\nFORMAT: Separate each prompt by a * — Output as a list: prompt1* prompt2* prompt3*. No additional context, commentary, numbering, or analysis. Just the 3 prompts . \n",
+          "passthroughBinaryImages": "={{ true }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -128,
+        -64
+      ],
+      "id": "6fc2dc8e-2eb3-45c1-b351-344d4563313b",
+      "name": "Visual Art Agent"
+    },
+    {
+      "parameters": {
+        "model": "mistral-large-2512",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatMistralCloud",
+      "typeVersion": 1,
+      "position": [
+        -128,
+        128
+      ],
+      "id": "03408121-13e2-4b07-b7f9-cdadfccceccf",
+      "name": "Style Prompt Generation",
+      "credentials": {
+        "mistralCloudApi": {
+          "id": "kB4SjdmyXWzwL6X3",
+          "name": "Mistral Cloud account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const prompts = $json.output.split('*');\n\nreturn [{\n  json: {\n    prompt0: prompts[0].trim(),\n    prompt1: prompts[1].trim(),\n    prompt2: prompts[2].trim()\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        128,
+        112
+      ],
+      "id": "ff3a3950-b17d-4921-b3d7-f3b2b9e160dc",
+      "name": "Prompt Formator"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c25a6177-9a72-4187-9085-527e83583ecc",
+              "name": "prompt0",
+              "value": "={{ $json.prompt0 }}",
+              "type": "string"
+            },
+            {
+              "id": "cf515b90-c065-44ac-af36-e06d4f3d21e0",
+              "name": "prompt1",
+              "value": "={{ $json.prompt1 }}",
+              "type": "string"
+            },
+            {
+              "id": "9e660d69-ca85-4abe-afa9-836567560e1d",
+              "name": "prompt2",
+              "value": "={{ $json.prompt2 }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        256,
+        -64
+      ],
+      "id": "3f6e9738-036b-4ef0-8fe6-125fb6e42281",
+      "name": "Prompt Separator"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/generate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            },
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"prompt\": \"{{ ($json.prompt0) }} \",\n  \"enableTranslation\": true,\n  \"aspectRatio\": \"16:9\",\n  \"outputFormat\": \"jpeg\",\n  \"promptUpsampling\": false,\n  \"model\": \"flux-kontext-pro\",\n  \"inputImage\": \"https://res.cloudinary.com/dml3ezydg/image/upload/e_background_removal/v1782151624/bottle1_d4uqko.jpg\",\n\"callBackUrl\": \"https://anajo.app.n8n.cloud/webhook-test/flux-callback\",\n  \"safetyTolerance\": 2\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        560,
+        -272
+      ],
+      "id": "e77f5984-8b9b-4adc-b97c-27a85a9fc516",
+      "name": "1st Mockup Generation"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/generate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            },
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"prompt\": \"{{ $json.prompt1 }} \",\n  \"enableTranslation\": true,\n  \"aspectRatio\": \"16:9\",\n  \"outputFormat\": \"jpeg\",\n  \"promptUpsampling\": false,\n  \"model\": \"flux-kontext-pro\",\n  \"inputImage\": \"https://res.cloudinary.com/dml3ezydg/image/upload/e_background_removal/v1782151624/bottle1_d4uqko.jpg\",\n  \"safetyTolerance\": 2\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        560,
+        -48
+      ],
+      "id": "25092eea-b0b9-423a-aad2-d1dd282ea4c9",
+      "name": "2nd Mockup Generation"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/generate",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            },
+            {}
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"prompt\": \"{{ $json.prompt2 }} \",\n  \"enableTranslation\": true,\n  \"aspectRatio\": \"16:9\",\n  \"outputFormat\": \"jpeg\",\n  \"promptUpsampling\": false,\n  \"model\": \"flux-kontext-pro\",\n  \"inputImage\": \"https://res.cloudinary.com/dml3ezydg/image/upload/e_background_removal/v1782151624/bottle1_d4uqko.jpg\",\n  \"safetyTolerance\": 2\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        560,
+        160
+      ],
+      "id": "c832a36a-45fe-480c-bd46-d2675bb3d13d",
+      "name": "3rd Mockup Generation"
+    },
+    {
+      "parameters": {
+        "amount": "={{ 30 }}"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        -272
+      ],
+      "id": "67d867dc-d062-43c0-bce5-d28a6ca9ed06",
+      "name": "Loading...",
+      "webhookId": "3c907e2e-b067-46d3-b497-e7ba28b5d69a"
+    },
+    {
+      "parameters": {
+        "amount": "={{ 30 }}"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        -48
+      ],
+      "id": "ef1b30b2-419c-4469-8b44-45555979a824",
+      "name": "Loading..",
+      "webhookId": "3c907e2e-b067-46d3-b497-e7ba28b5d69a"
+    },
+    {
+      "parameters": {
+        "amount": "={{ 30 }}"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        720,
+        160
+      ],
+      "id": "0d0400ff-1bed-4b7d-b3f1-6e2923737130",
+      "name": "Loading...1",
+      "webhookId": "3c907e2e-b067-46d3-b497-e7ba28b5d69a"
+    },
+    {
+      "parameters": {
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/record-info",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "=taskId",
+              "value": "={{ $json.data.taskId }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        880,
+        -272
+      ],
+      "id": "5477348c-be3c-4b89-a055-bf5b0482cd8b",
+      "name": "Pulling Mockup 1"
+    },
+    {
+      "parameters": {
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/record-info",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "=taskId",
+              "value": "={{ $json.data.taskId }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        880,
+        -48
+      ],
+      "id": "6fd9b298-b1a4-4352-a092-58621e405627",
+      "name": "Pulling Mockup 2",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 3000
+    },
+    {
+      "parameters": {
+        "url": "https://api.fluxapi.ai/api/v1/flux/kontext/record-info",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "=taskId",
+              "value": "={{ $json.data.taskId }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer  "
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        880,
+        160
+      ],
+      "id": "edb86cb5-9540-489f-980c-3a2603a38ac7",
+      "name": "Pulling Mockup 3",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "waitBetweenTries": 3000
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.data.response.resultImageUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1184,
+        -272
+      ],
+      "id": "c4424482-0147-4cbc-99f0-e65080af0d78",
+      "name": "Downloading Mockup 1",
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.data.response.resultImageUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1184,
+        -48
+      ],
+      "id": "d175cd2e-7279-4a25-a4cf-7d2d6f05345f",
+      "name": "Downloading Mockup 2"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.data.response.resultImageUrl }}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "file"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1184,
+        160
+      ],
+      "id": "27f22d57-78ef-4cda-9ac6-b303465a6c3e",
+      "name": "Downloading Mockup 3"
+    },
+    {
+      "parameters": {
+        "content": "![Source example](https://res.cloudinary.com/dml3ezydg/image/upload/Mockup_3_sh3anb.jpg#full-width)\n\n # **Mockup 3**",
+        "height": 432,
+        "width": 640,
+        "color": "#000000"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1728,
+        160
+      ],
+      "typeVersion": 1,
+      "id": "39180ef3-efff-4cd7-8145-9e7bc8b49859",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "\n![Source example](https://res.cloudinary.com/dml3ezydg/image/upload/Mockup_2_kwe8xw.jpg#full-width)\n\n # **Mockup 2**",
+        "height": 432,
+        "width": 640,
+        "color": "#000000"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1728,
+        -288
+      ],
+      "typeVersion": 1,
+      "id": "7d333c8b-107f-458d-8b06-92d14b736777",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "content": "![Source example](https://res.cloudinary.com/dml3ezydg/image/upload/Mockup_1_xaznuy.jpg#full-width  )\n # **Mockup 1**",
+        "height": 432,
+        "width": 640,
+        "color": "#000000"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1728,
+        -736
+      ],
+      "typeVersion": 1,
+      "id": "0f8030be-b1eb-4517-999f-4617629e8a9e",
+      "name": "Sticky Note8"
+    },
+    {
+      "parameters": {
+        "content": "# 🎨 Prompt Generation\n\nThe Visual Art Agent analyzes the product image together with the selected style.\n\nIt generates three unique image-generation prompts that:\n\n• Preserve the exact product\n• Create different scenes\n• Use different lighting and compositions\n• Follow the selected brand style\n\nOutput:\n3 detailed prompts ready for image generation.",
+        "height": 384,
+        "width": 480
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -80,
+        304
+      ],
+      "typeVersion": 1,
+      "id": "3067a78a-2dd8-4417-a77c-08cc3a5c1ee1",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "url": "https://res.cloudinary.com/dml3ezydg/image/upload/e_background_removal/v1782151624/bottle1_d4uqko.jpg",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -384,
+        -64
+      ],
+      "id": "601238e8-909a-4db1-b5c8-9f0fa5635012",
+      "name": "Product Upload",
+      "alwaysOutputData": false,
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "content": "# ✨ Mockup Generation\n\nEach generated prompt is sent independently to Flux Kontext.\n\nThe model creates one photorealistic mockup while preserving:\n\n• Product shape\n• Colors\n• Branding\n• Materials\n\nResult:\nThree different professional product mockups.",
+        "height": 384,
+        "width": 480
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        560,
+        320
+      ],
+      "typeVersion": 1,
+      "id": "f737e24a-ad93-489c-ac78-2624e0edcb9d",
+      "name": "Sticky Note10"
+    },
+    {
+      "parameters": {
+        "content": "# 💾 Output\n\nEach generated mockup is:\n\n• Downloaded\n• Saved to Google Drive\n• Ready for use in marketing, e-commerce, or social media.",
+        "height": 208,
+        "width": 480
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1168,
+        320
+      ],
+      "typeVersion": 1,
+      "id": "dc678483-92cc-49f6-b03a-cbb5bb2cd096",
+      "name": "Sticky Note11"
+    },
+    {
+      "parameters": {
+        "content": "# Results",
+        "height": 1488,
+        "width": 784
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1664,
+        -816
+      ],
+      "typeVersion": 1,
+      "id": "229771fc-314b-4d87-a620-f5975b2b0275",
+      "name": "Sticky Note12"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Product Upload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload file": {
+      "main": [
+        []
+      ]
+    },
+    "Visual Art Agent": {
+      "main": [
+        [
+          {
+            "node": "Prompt Formator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Style Prompt Generation": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Visual Art Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prompt Formator": {
+      "main": [
+        [
+          {
+            "node": "Prompt Separator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prompt Separator": {
+      "main": [
+        [
+          {
+            "node": "1st Mockup Generation",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "2nd Mockup Generation",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "3rd Mockup Generation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1st Mockup Generation": {
+      "main": [
+        [
+          {
+            "node": "Loading...",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2nd Mockup Generation": {
+      "main": [
+        [
+          {
+            "node": "Loading..",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3rd Mockup Generation": {
+      "main": [
+        [
+          {
+            "node": "Loading...1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loading...": {
+      "main": [
+        [
+          {
+            "node": "Pulling Mockup 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loading..": {
+      "main": [
+        [
+          {
+            "node": "Pulling Mockup 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loading...1": {
+      "main": [
+        [
+          {
+            "node": "Pulling Mockup 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pulling Mockup 1": {
+      "main": [
+        [
+          {
+            "node": "Downloading Mockup 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pulling Mockup 2": {
+      "main": [
+        [
+          {
+            "node": "Downloading Mockup 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pulling Mockup 3": {
+      "main": [
+        [
+          {
+            "node": "Downloading Mockup 3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Downloading Mockup 1": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Downloading Mockup 2": {
+      "main": [
+        [
+          {
+            "node": "Upload file2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Downloading Mockup 3": {
+      "main": [
+        [
+          {
+            "node": "Upload file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Product Upload": {
+      "main": [
+        [
+          {
+            "node": "Visual Art Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "4f94fe92-dce4-41d8-85cd-b362f8d31921",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "3c47b5884dc857f112e610edd5ed96109c983133b7c4940de20943a1b1452275"
+  },
+  "nodeGroups": [],
+  "id": "8rrAjdLgTxsKt6EW",
+  "tags": []
+}
