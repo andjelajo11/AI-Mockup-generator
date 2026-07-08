@@ -39,9 +39,9 @@ Asset Managment
 
 ---
 
-# Workflow Sections
+# Workflow Documentation
 
-## 📦 1. Product Onboarding
+## 📦 1. Product Onboarding & Preroccesing
 
 The workflow begins by loading the source product image.
 
@@ -53,7 +53,7 @@ The image can come from:
 * Any storage provider
 * User upload (easy to replace)
 
-At this stage the workflow only prepares the product image. No modifications are made.
+Basic image processing is done -> background removal via api. Depending on the use case it could be extended for any other functionality (Resolution upscaling, Reflection and shadow removal, product detection & cropping...) 
 
 **Output**
 
@@ -65,7 +65,7 @@ At this stage the workflow only prepares the product image. No modifications are
 
 The Prompt Engine is responsible for creating creative scene descriptions.
 
-Instead of directly generating images, an AI Visual Art Director first analyzes:
+Instead of directly generating images, an AI Agent in role of Visual Art Director first analyzes:
 
 * the product
 * the selected visual style
@@ -75,7 +75,9 @@ It then produces **three completely different prompts** that describe three uniq
 
 Each prompt follows strict rules:
 
-* Preserve product identity
+* Follows composition rules (lightning, surface...)
+* Physical locks
+* Preserve product identity 
 * Preserve branding
 * Preserve materials
 * Preserve proportions
@@ -102,7 +104,7 @@ Three production-ready prompts.
 
 The generated prompts are separated into individual items.
 
-This allows all three image generations to run independently and in parallel.
+This allows all three image generations to run independently.
 
 Benefits:
 
@@ -126,31 +128,17 @@ The model creates a realistic marketing image while keeping the product visually
 
 Each generation produces a different composition, lighting setup, and background.
 
-This stage runs in parallel for all three prompts.
 
 ---
 
-## ⏳ 5. Generation Monitoring
 
-Image generation is asynchronous.
-
-The workflow automatically:
-
-1. Starts generation
-2. Waits for processing
-3. Checks generation status
-4. Retrieves the completed image
-
-This ensures the workflow only continues after each mockup has been successfully generated.
-
----
-
-## 📥 6. Download & Storage
+## 📥 5. Download & Storage
 
 After generation completes, the workflow:
 
 * Downloads each image
 * Converts it into a binary file
+* Rename image files into predefined names
 * Uploads it directly to Google Drive
 
 The generated mockups are immediately ready for use.
