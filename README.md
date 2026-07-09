@@ -23,12 +23,14 @@ The goal was to validate that the pipeline is modular and not dependent on a spe
 
 This demonstrates how the same AI pipeline can be translated between automation platforms while maintaining identical business logic and image generation behavior.
 
+Workflow Demo:
+https://www.loom.com/share/8856aca056994aa7bc70adcdd1d633db
+
 <img width="713" height="343" alt="workflow ai mocku" src="https://github.com/user-attachments/assets/47ea9efc-ead3-45f8-aeb0-82324a5775c4" />
 
 <img width="887" height="476" alt="comfyui workflow" src="https://github.com/user-attachments/assets/dad67dd8-9772-472f-822f-e7e43d6c4939" />
 
-Workflow Demo:
-https://www.loom.com/share/8856aca056994aa7bc70adcdd1d633db
+
 ---
 
 # Workflow Overview
