@@ -27,6 +27,8 @@ This demonstrates how the same AI pipeline can be translated between automation 
 
 <img width="887" height="476" alt="comfyui workflow" src="https://github.com/user-attachments/assets/dad67dd8-9772-472f-822f-e7e43d6c4939" />
 
+Workflow Demo:
+https://www.loom.com/share/8856aca056994aa7bc70adcdd1d633db
 ---
 
 # Workflow Overview
