@@ -1,4 +1,4 @@
-# 🚀 AI Product Mockup Generator
+# 🛍️ AI Product Mockup Generator
 
 Generate professional AI-powered product mockups from a single product image.
 
