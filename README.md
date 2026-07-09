@@ -2,7 +2,7 @@
 
 Generate professional AI-powered product mockups from a single product image.
 
-This n8n workflow automatically transforms a product photo into **three unique, high-quality marketing mockups** using AI while preserving the product's original appearance, branding, shape, and materials.
+This workflow automatically transforms a product photo into **three unique, high-quality marketing mockups** using AI while preserving the product's original appearance, branding, shape, and materials.
 
 1. Upload a product image.
 2. Select a visual style (Editorial, Cinematic, Fashion, or any custom style).
@@ -10,7 +10,23 @@ This n8n workflow automatically transforms a product photo into **three unique, 
 4. Flux Kontext generates 3 photorealistic mockups.
 5. Generated images are downloaded and automatically uploaded to Google Drive.
 
+## Cross-Platform Implementation
+
+This workflow was implemented in **n8n** as the primary orchestration platform and also recreated in **ComfyUI**.
+
+The goal was to validate that the pipeline is modular and not dependent on a specific workflow tool.
+
+### Platforms
+
+- ✅ n8n — Production workflow orchestration, API integration, automation, asset management
+- ✅ ComfyUI — Node-based image generation pipeline with identical generation logic
+
+This demonstrates how the same AI pipeline can be translated between automation platforms while maintaining identical business logic and image generation behavior.
+
 <img width="713" height="343" alt="workflow ai mocku" src="https://github.com/user-attachments/assets/47ea9efc-ead3-45f8-aeb0-82324a5775c4" />
+
+<img width="887" height="476" alt="comfyui workflow" src="https://github.com/user-attachments/assets/dad67dd8-9772-472f-822f-e7e43d6c4939" />
+
 ---
 
 # Workflow Overview
@@ -170,6 +186,15 @@ The workflow produces:
 * ✅ Modular n8n workflow
 
 ---
+## Design Philosophy
+
+The workflow was intentionally designed to be platform-agnostic.
+
+The business logic (product onboarding → prompt engineering → image generation → asset delivery) is separated from the orchestration layer.
+
+As a proof of concept, the same pipeline was recreated in ComfyUI, demonstrating that the workflow architecture can be migrated across different AI workflow platforms with minimal changes.
+
+This approach makes it easier to adopt new AI models and tooling while keeping the production pipeline consistent.
 
 # Technologies Used
 
@@ -190,7 +215,7 @@ You can:
 
 * Add new photography styles
 * Generate more than three mockups
-* Replace Flux with another image generation model
+* Replace Flux and Mistral with another image AI model
 * Store outputs in AWS S3, Dropbox, Cloudinary, or other storage providers
 * Connect it to forms, webhooks, APIs, or chatbots
 
