@@ -223,11 +223,7 @@ You can:
 
 ---
 
-# License
 
-This project is provided as an educational and production-ready n8n workflow.
-
-Feel free to modify and extend it for your own projects.
 
 
 
