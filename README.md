@@ -57,7 +57,7 @@ Asset Managment
 
 # Workflow Documentation
 
-## 📦 1. Product Onboarding & Preroccesing
+## 📦 1. Product Onboarding & Preprocessing
 
 The workflow begins by loading the source product image.
 
