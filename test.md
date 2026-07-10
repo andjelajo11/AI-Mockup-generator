@@ -194,10 +194,6 @@ The second iteration extended the system prompt with several additional constrai
 |----------|----------|----------|----------|
 | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_1.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_4.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_5.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_8.jpg) |
 
-<p align="center">
-  <img src="mockup_exemples/products_images/original.png" width="280">
-  <img src="mockup_exemples/products_images/improved.png" width="280">
-</p>
 
 > **Note:** Replace the filenames above with the actual image names from `mockup_exemples/products_images/`.
 
