@@ -50,18 +50,12 @@ The complete workflow combines prompt engineering, workflow orchestration, AI im
 <p align="center">
   <img src="architecture_diagram/n8n workflow diagram.png" width="900">
 </p>
+📄 **n8n Workflow**
 
 <p align="center">
   <img src="architecture_diagram/comfyui%20workflow%20diagram.png" width="900">
 </p>
-
-### Additional Architecture Diagrams
-
-- 📄 **n8n Workflow**
-  - [`architecture_diagram/n8n workflow diagram.png`](architecture_diagram/n8n%20workflow%20diagram.png)
-
-- 📄 **ComfyUI Workflow**
-  - [`architecture_diagram/comfyui workflow diagram.png`](architecture_diagram/comfyui%20workflow%20diagram.png)
+📄 **ComfyUI Workflow**
 
 ---
 
