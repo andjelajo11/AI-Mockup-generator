@@ -96,7 +96,7 @@ The exported workflow can be found here:
 
 # Core Components
 
-## Prompt Engineering
+## 1. Prompt Engineering
 
 Instead of relying on a single prompt, the project uses a modular prompt architecture that separates responsibilities into reusable building blocks.
 
@@ -122,7 +122,7 @@ The framework covers:
 
 ---
 
-## Design Principles
+## 2. Design Principles
 
 Consistent visual quality requires more than good prompts.
 
