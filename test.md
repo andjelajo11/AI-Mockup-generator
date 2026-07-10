@@ -47,15 +47,15 @@ The goal is not simply generating attractive images—it is building an end-to-e
 
 The complete workflow combines prompt engineering, workflow orchestration, AI image generation, asset management, and production automation.
 
+📄 **n8n Workflow**
 <p align="center">
   <img src="architecture_diagram/n8n workflow diagram.png" width="900">
 </p>
-📄 **n8n Workflow**
 
+📄 **ComfyUI Workflow**
 <p align="center">
   <img src="architecture_diagram/comfyui%20workflow%20diagram.png" width="900">
 </p>
-📄 **ComfyUI Workflow**
 
 ---
 
