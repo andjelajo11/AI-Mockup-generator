@@ -48,6 +48,8 @@ The goal is not simply generating attractive images—it is building an end-to-e
 Complete Workflow Architecture you can find here :
 ➡️ [`workflow_export.json`](architecture_diagram/Workflow_Architecture.md)
 
+**Workflow demo**: https://www.loom.com/share/8856aca056994aa7bc70adcdd1d633db
+
 The complete workflow combines prompt engineering, workflow orchestration, AI image generation, asset management, and production automation.
 
 📄 **n8n Workflow**
