@@ -33,17 +33,17 @@ Composition determines how the viewer's attention is directed toward the product
 The generated scene should always prioritize product visibility over environmental complexity.
 
 ### Current Implementation:
-Rule of thirds
-Centered hero shot
-Natural placement
+-Rule of thirds
+-Centered hero shot
+-Natural placement
 
 ### Future Enhancements:
-visual hierarchy
-leading lines
-foreground/background balance
-framing
-copy space
-marketplace optimization
+-visual hierarchy
+-leading lines
+-foreground/background balance
+-framing
+-copy space
+-marketplace optimization
 
 
 Avoid:
@@ -58,6 +58,28 @@ Avoid:
 ## Camera
 
 Camera language should resemble real commercial photography.
+
+### Current Implementation:
+-Cinematic
+-Editorial
+-Fashion
+
+### Future Enhancements:
+-Focal length
+-camera height
+-lens characteristics
+-framing distance
+-perspective
+
+85mm product lens
+
+35mm lifestyle
+
+Macro detail shot
+
+Eye-level perspective
+
+Slight top-down angle
 
 Preferred camera perspectives include:
 
@@ -78,7 +100,16 @@ Camera positioning should always reinforce product readability.
 
 Lighting establishes mood while preserving product accuracy.
 
-Preferred lighting setups include:
+### Current Implementation:
+-lighting direction
+
+### Future Enhancements:
+-Studio lighting presets
+- Three-point lighting templates
+- HDRI-inspired environment lighting
+- Time-of-day lighting simulation
+- Product-category-specific lighting recommendations
+
 
 ### Studio
 
@@ -112,6 +143,26 @@ Material fidelity is critical.
 
 The AI should preserve the physical characteristics of every surface.
 
+### Current Implementation
+
+The current prompt explicitly prevents material reinterpretation by enforcing:
+
+- Glass remains glass
+- Plastic remains plastic
+- Metal remains metal
+- No redesign of product materials
+- No deformation or geometry changes
+
+This minimizes hallucinations while maintaining product authenticity.
+
+### Future Enhancements
+
+- Automatic material classification before prompt generation
+- Material-specific lighting recommendations
+- Reflection-aware prompting for glossy products
+- Surface-aware environment selection
+- Improved handling of transparent and reflective objects
+
 Maintain:
 
 - Surface roughness
@@ -139,19 +190,18 @@ Examples:
 
 Color consistency is essential for commercial product photography.
 
-The workflow should preserve:
+### Current Implementation
 
-- Original product colors
-- Logo colors
-- Packaging colors
-- Brand identity
+- Preserve product color
 
-Images should maintain:
 
-- Neutral white balance
-- Controlled saturation
-- Accurate contrast
-- Realistic exposure
+### Future Enhancements
+
+- white balance
+- exposure
+- saturation
+- color harmony
+- neutral product rendering
 
 Avoid:
 
@@ -328,6 +378,3 @@ Future iterations may introduce:
 - Multi-image consistency checks
 - Marketplace-specific composition rules
 
-Regardless of future improvements, the core philosophy remains unchanged:
-
-> Preserve the product. Enhance the photography.
