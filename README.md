@@ -144,7 +144,7 @@ These principles serve as technical guardrails that help maintain production-qua
 ➡️ [`docs/DESIGN_PRINCIPLES.md`](docs/DESIGN_PRINCIPLES.md)
 
 ---
-# Prompt Engineering Journey
+# Design & Prompt Engineering Journey
 
 One of the primary goals of this project was understanding **why prompts succeed or fail**, rather than simply generating attractive images.
 
