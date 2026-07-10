@@ -51,6 +51,10 @@ The complete workflow combines prompt engineering, workflow orchestration, AI im
   <img src="architecture_diagram/n8n workflow diagram.png" width="900">
 </p>
 
+<p align="center">
+  <img src="architecture_diagram/comfyui%20workflow%20diagram.png" width="900">
+</p>
+
 ### Additional Architecture Diagrams
 
 - 📄 **n8n Workflow**
@@ -146,30 +150,66 @@ These principles serve as technical guardrails that help maintain production-qua
 ➡️ [`docs/DESIGN_PRINCIPLES.md`](docs/DESIGN_PRINCIPLES.md)
 
 ---
+# Prompt Engineering Journey
 
-## Workflow Automation
+One of the primary goals of this project was understanding **why prompts succeed or fail**, rather than simply generating attractive images.
 
-The project combines multiple technologies into one production-ready pipeline.
+The repository documents multiple prompt iterations showing how prompt structure evolved through experimentation.
 
-### Technologies
+The development process follows:
 
-- n8n
-- ComfyUI
-- Flux Kontext
-- Google Drive
-- LLM-based Prompt Generation
+1. Initial prompt
+2. Generated result
+3. Visual analysis
+4. Prompt refinement
+5. Improved generation
 
-Responsibilities include:
+This iterative approach improved:
 
-- Workflow orchestration
-- Prompt generation
-- Image generation
-- File management
-- Asset delivery
+- Realism
+- Lighting
+- Composition
+- Product preservation
+- Commercial quality
 
-Workflow export:
+## Iteration 1 — Initial System Prompt
 
-➡️ [`workflow_export.json`](workflow_export.json)
+The first version of the system prompt focused on generating diverse product photography concepts while preserving the product's visual identity.
+Although these constraints significantly improved consistency compared to an unconstrained prompt, several recurring issues remained.
+The generated prompts occasionally resulted in images with unrealistic physical behavior, including: Products floating, Unrealistic positioning...
+
+## Example Outputs
+
+| Mockup 1 | Mockup 2 | Mockup 3 |
+|----------|----------|----------|
+| ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Failed_Mockup_1.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Failed_Mockup_2.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Failed_Mockup_3.jpg) |
+
+
+## Iteration 2 — Physical Realism Constraints
+
+The second iteration extended the system prompt with several additional constraint groups designed to reduce unrealistic generations.
+
+### Added Constraint Categories: 
+ - Physical Realism Locks (Product must always rest on a physical surface, no floating or levitating products...)
+ - Identity Preservation Hard Rule (A real-world photographed object being placed into a new photographic environment)
+ - Composition Rule ( resting naturally on a surface, positioned according to realistic product photography practices)
+
+## Improved Outputs
+
+| Mockup 1 | Mockup 2 | Mockup 3 | Mockup 4 |
+|----------|----------|----------|----------|
+| ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_1.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_4.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_5.jpg) | ![](https://github.com/andjelajo11/AI-Mockup-generator/blob/main/mockup_exemples/products_images/Improved_Mockup_8.jpg) |
+
+<p align="center">
+  <img src="mockup_exemples/products_images/original.png" width="280">
+  <img src="mockup_exemples/products_images/improved.png" width="280">
+</p>
+
+> **Note:** Replace the filenames above with the actual image names from `mockup_exemples/products_images/`.
+
+Additional examples, prompt comparisons, development notes, and lessons learned are available here:
+
+➡️ [`mockup_exemples/before_after.md`](mockup_exemples/before_after.md)
 
 ---
 
@@ -205,40 +245,22 @@ Repository:
 
 ---
 
-# Prompt Engineering Journey
+# Future Improvements
 
-One of the primary goals of this project was understanding **why prompts succeed or fail**, rather than simply generating attractive images.
+Potential future work includes:
 
-The repository documents multiple prompt iterations showing how prompt structure evolved through experimentation.
-
-The development process follows:
-
-1. Initial prompt
-2. Generated result
-3. Visual analysis
-4. Prompt refinement
-5. Improved generation
-
-This iterative approach improved:
-
-- Realism
-- Lighting
-- Composition
-- Product preservation
-- Commercial quality
-
-## Prompt Iteration Example
-
-<p align="center">
-  <img src="mockup_exemples/products_images/original.png" width="280">
-  <img src="mockup_exemples/products_images/improved.png" width="280">
-</p>
-
-> **Note:** Replace the filenames above with the actual image names from `mockup_exemples/products_images/`.
-
-Additional examples, prompt comparisons, development notes, and lessons learned are available here:
-
-➡️ [`mockup_exemples/before_after.md`](mockup_exemples/before_after.md)
+- Automated product segmentation
+- Batch processing for large product catalogs
+- Multi-product workflows
+- Automated quality evaluation
+- Refined instructions focusing on: Composition, Lightning, Materials, Visual Style
+- Testing different Generative models for image generation 
+- Prompt versioning
+- AI model benchmarking
+- Metadata generation
+- Additional cloud storage integrations
+- Monitoring & logging
+- Fully parameterized workflow templates
 
 ---
 
@@ -287,23 +309,6 @@ Throughout development, several important insights emerged:
 - Iterative experimentation is essential for achieving production-quality outputs.
 
 These lessons influenced every stage of the project—from prompt engineering to workflow architecture.
-
----
-
-# Future Improvements
-
-Potential future work includes:
-
-- Automated product segmentation
-- Batch processing for large product catalogs
-- Multi-product workflows
-- Automated quality evaluation
-- Prompt versioning
-- AI model benchmarking
-- Metadata generation
-- Additional cloud storage integrations
-- Monitoring & logging
-- Fully parameterized workflow templates
 
 ---
 
