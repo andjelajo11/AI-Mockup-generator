@@ -1,4 +1,4 @@
-# AI Product Mockup Generation Pipeline
+# ✨ AI Product Mockup Generation Pipeline ✨
 
 > **A production-oriented AI pipeline that transforms manual product mockup creation into an automated, scalable workflow using n8n, ComfyUI, Flux Kontext, prompt engineering, and Python automation.**
 
