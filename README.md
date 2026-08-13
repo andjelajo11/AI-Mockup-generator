@@ -5,7 +5,7 @@
 ---
 ## ◀️ Workflow Demo
 
-**Workflow demo**: https://www.loom.com/share/5989a045873440e4a793009bb6707de6
+**Workflow video demo**: https://www.loom.com/share/5989a045873440e4a793009bb6707de6
 
 📄 **n8n Workflow**
 <p align="center">
