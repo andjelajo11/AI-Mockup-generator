@@ -3,6 +3,24 @@
 > **A production-oriented AI pipeline that transforms manual product mockup creation into an automated, scalable workflow using n8n, ComfyUI, Flux Kontext, prompt engineering, and Python automation.**
 
 ---
+## Workflow Demo
+
+**Workflow demo**: https://www.loom.com/share/5989a045873440e4a793009bb6707de6
+
+The complete workflow combines prompt engineering, workflow orchestration, AI image generation, asset management, and production automation.
+
+📄 **n8n Workflow**
+<p align="center">
+  <img src="architecture_diagram/n8n workflow diagram.png" width="900">
+</p>
+
+📄 **ComfyUI Workflow**
+<p align="center">
+  <img src="architecture_diagram/comfyui%20workflow%20diagram.png" width="900">
+</p>
+
+---
+
 
 ## Project Overview
 
